@@ -15,26 +15,28 @@ class Game extends Scene {
     create() {
 
         this.sky = this.add.image(this.game.canvas.width * 0.5, this.game.canvas.height * 0.5, 'sky').setScale(4);
-        this.platforms = this.physics.add.staticGroup();
-        this.platforms.create(this.game.canvas.width * 0.5, this.game.canvas.height * 0.97, 'ground').setScale(4);
-        this.platforms.create(50, this.game.canvas.height * 0.30, 'ground').setScale(2);
-        this.platforms.create(1200, this.game.canvas.height * 0.50, 'ground').setScale(2);
+        const platforms = this.physics.add.staticGroup();
+        platforms.create(this.game.canvas.width * 0.5, this.game.canvas.height * 0.97, 'ground').setScale(4);
+        platforms.create(200, this.game.canvas.height * 0.65, 'ground').setScale(2)
+        platforms.create(50, this.game.canvas.height * 0.30, 'ground').setScale(2).refreshBody();
+        platforms.create(900, this.game.canvas.height * 0.50, 'ground').setScale(2);
         //center green bar
-        this.platforms.create(100, this.game.canvas.height * 0.65, 'ground').setScale(2);
+
+
         //set the logo
         this.logo = this.add.image(this.game.canvas.width * 0.5, this.game.canvas.height * 0.09, 'logo').setScale(2);
 
 
         // create the player
 
-        this.player = this.physics.add.sprite(100, 450, 'player').setScale(1.7);
-        this.player.setBounce(0.3);
-        this.player.setCollideWorldBounds(true);
+        const player = this.physics.add.sprite(this.game.canvas.width * 0.5, this.game.canvas.height * .90, 'player').setScale(3.5);
+        player.setBounce(0.39);
+        player.setCollideWorldBounds(true);
 
         // animation
         this.anims.create({
             key: "left",
-            frames: this.anims.generateFrameNumbers('player', { start: 0, end: 0 }),
+            frames: this.anims.generateFrameNumbers('player', { start: 0, end: 3 }),
             frameRate: 10,
             repeat: -1
         })
@@ -54,26 +56,25 @@ class Game extends Scene {
 
 
         this.cursors = this.input.keyboard.createCursorKeys();
-
-
         //set the stars
-
-        this.stars = this.physics.add.group({
+        const stars = this.physics.add.group({
             key: 'star',
             repeat: 11,
-            setXY: { x: 12, y: 0, stepX: 70 }
+            setXY: { x: 70, y: 0, stepX: 100 },
+
         })
-        this.stars.children.iterate(function (child) {
-            child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8))
+        stars.children.iterate(function (child) {
+            child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
+            child.setScale(3);
         })
-        this.scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
+        this.scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '70px', fill: '#000' });
 
-        this.physics.add.collider(this.player, this.platforms);
-        this.physics.add.collider(this.player, this.platforms);
+        this.physics.add.collider(player, platforms);
+        this.physics.add.collider(stars, platforms);
 
-        this.physics.add.overlap(this.player, this.stars, this.collectStar, null, this);
+        this.physics.add.overlap(player, stars, this.collectStar, null, this);
 
-        // this.player = player;
+        this.player = player;
 
         this.cameras.main.setPostPipeline(HueRotatePostFX);
     }

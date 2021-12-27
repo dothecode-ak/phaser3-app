@@ -68,7 +68,7 @@ const webpackConfig = {
         extensions: ['.ts', '.js', '.scss', '.css', '.sass']
     },
     devServer: {
-
+        host: "192.168.1.241",
         historyApiFallback: true,
         quiet: true,
 

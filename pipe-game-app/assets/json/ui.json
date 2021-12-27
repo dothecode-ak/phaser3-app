@@ -1,0 +1,105 @@
+{
+    "frames": {
+
+        "Glow-B": {
+            "frame": { "x": 1599, "y": 273, "w": 41, "h": 117 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 41, "h": 117 },
+            "sourceSize": { "w": 41, "h": 117 }
+        },
+        "Glow-G": {
+            "frame": { "x": 1599, "y": 392, "w": 41, "h": 117 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 41, "h": 117 },
+            "sourceSize": { "w": 41, "h": 117 }
+        },
+        "Glow-R": {
+            "frame": { "x": 1162, "y": 400, "w": 41, "h": 117 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 41, "h": 117 },
+            "sourceSize": { "w": 41, "h": 117 }
+        },
+        "Glow-Y": {
+            "frame": { "x": 1205, "y": 400, "w": 41, "h": 117 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 41, "h": 117 },
+            "sourceSize": { "w": 41, "h": 117 }
+        },
+        "PipeCorrect": {
+            "frame": { "x": 1, "y": 1, "w": 270, "h": 270 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 270, "h": 270 },
+            "sourceSize": { "w": 270, "h": 270 }
+        },
+        "PipePour": {
+            "frame": { "x": 1, "y": 273, "w": 270, "h": 270 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 270, "h": 270 },
+            "sourceSize": { "w": 270, "h": 270 }
+        },
+        "PipeTankEmpty": {
+            "frame": { "x": 273, "y": 273, "w": 269, "h": 270 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 1, "y": 0, "w": 269, "h": 270 },
+            "sourceSize": { "w": 270, "h": 270 }
+        },
+        "PipeTankFull": {
+            "frame": { "x": 1352, "y": 1, "w": 270, "h": 270 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 270, "h": 270 },
+            "sourceSize": { "w": 270, "h": 270 }
+        },
+        "PipeWrong": {
+            "frame": { "x": 1328, "y": 273, "w": 269, "h": 270 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 1, "y": 0, "w": 269, "h": 270 },
+            "sourceSize": { "w": 270, "h": 270 }
+        },
+        "Solved": {
+            "frame": { "x": 544, "y": 269, "w": 782, "h": 129 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 10, "y": 1, "w": 782, "h": 129 },
+            "sourceSize": { "w": 801, "h": 130 }
+        },
+        "Tap": {
+            "frame": { "x": 544, "y": 400, "w": 307, "h": 183 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 307, "h": 183 },
+            "sourceSize": { "w": 307, "h": 183 }
+        },
+        "Time": {
+            "frame": { "x": 853, "y": 400, "w": 307, "h": 183 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 307, "h": 183 },
+            "sourceSize": { "w": 307, "h": 183 }
+        },
+        "Title": {
+            "frame": { "x": 273, "y": 1, "w": 1077, "h": 266 },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": { "x": 15, "y": 3, "w": 1077, "h": 266 },
+            "sourceSize": { "w": 1105, "h": 270 }
+        }
+    },
+    "meta": {
+        "app": "https://www.codeandweb.com/texturepacker",
+        "version": "1.0",
+        "image": "ui",
+        "format": "RGBA8888",
+        "size": { "w": 1641, "h": 584 },
+        "scale": "1",
+        "smartupdate": "$TexturePacker:SmartUpdate:c71d236288d19bf345e6c780de6870e8:fa5b23872b5cd764cd64956a8363d865:5b04aa198265472a3c5f56958d78e97b$"
+    }
+}

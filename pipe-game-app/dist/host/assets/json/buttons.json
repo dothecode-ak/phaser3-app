@@ -1,0 +1,70 @@
+{
+    "frames": {
+
+        "Mute": {
+            "frame": { "x": 869, "y": 145, "w": 236, "h": 77 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 236, "h": 77 },
+            "sourceSize": { "w": 236, "h": 77 }
+        },
+        "MuteActive": {
+            "frame": { "x": 1107, "y": 145, "w": 236, "h": 77 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 236, "h": 77 },
+            "sourceSize": { "w": 236, "h": 77 }
+        },
+        "Next": {
+            "frame": { "x": 1, "y": 1, "w": 596, "h": 142 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 596, "h": 142 },
+            "sourceSize": { "w": 596, "h": 142 }
+        },
+        "NextRoll": {
+            "frame": { "x": 599, "y": 1, "w": 596, "h": 142 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 596, "h": 142 },
+            "sourceSize": { "w": 596, "h": 142 }
+        },
+        "Restart": {
+            "frame": { "x": 1, "y": 145, "w": 432, "h": 103 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 432, "h": 103 },
+            "sourceSize": { "w": 432, "h": 103 }
+        },
+        "RestartRoll": {
+            "frame": { "x": 435, "y": 145, "w": 432, "h": 103 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 432, "h": 103 },
+            "sourceSize": { "w": 432, "h": 103 }
+        },
+        "Start": {
+            "frame": { "x": 1197, "y": 1, "w": 509, "h": 121 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 509, "h": 121 },
+            "sourceSize": { "w": 509, "h": 121 }
+        },
+        "StartRoll": {
+            "frame": { "x": 1345, "y": 124, "w": 509, "h": 121 },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": { "x": 0, "y": 0, "w": 509, "h": 121 },
+            "sourceSize": { "w": 509, "h": 121 }
+        }
+    },
+    "meta": {
+        "app": "https://www.codeandweb.com/texturepacker",
+        "version": "1.0",
+        "image": "buttons",
+        "format": "RGBA8888",
+        "size": { "w": 1855, "h": 249 },
+        "scale": "1",
+        "smartupdate": "$TexturePacker:SmartUpdate:4ec48efe849a8b9fdaa149c12906e006:e631046be5c79075df663518313eb456:b34c8670b11bb20cb1751a70d3683e22$"
+    }
+}

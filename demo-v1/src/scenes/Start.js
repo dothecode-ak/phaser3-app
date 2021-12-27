@@ -12,6 +12,7 @@ class Start extends Scene {
         this.start = this.add.sprite(this.game.canvas.width * 0.5, this.game.canvas.height * 0.9, 'start', this.b).setScale(0.3);
         this.start.setInteractive({ cursor: 'pointer' });
         this.start.on('pointerdown', () => { this.gameStatus(this); });
+        this.logo = this.add.image(this.game.canvas.width * 0.5, this.game.canvas.height * 0.09, 'logo').setScale(2);
     }
 
     gameStatus() {
